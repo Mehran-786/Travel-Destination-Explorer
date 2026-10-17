@@ -1,0 +1,128 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #173b67;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1769aa;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #104b7a;
+}
+
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.destination-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card h3 {
+    margin-top: 0;
+    color: #173b67;
+}
+
+.destination-card p {
+    line-height: 1.5;
+}
+
+.destination-card .cost {
+    font-weight: bold;
+    color: #137547;
+}
+
+.total-section {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+#totalCost {
+    font-size: 24px;
+    font-weight: bold;
+    color: #137547;
+}
+
+#noResults {
+    padding: 20px;
+    text-align: center;
+    color: #b42318;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 18px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

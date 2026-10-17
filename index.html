@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Travel Destination Explorer</h1>
+        <p>Explore destinations and estimate your travel cost.</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search destinations..."
+                aria-label="Search destinations"
+            >
+
+            <button id="sortButton" type="button">
+                Sort by Cost (Low to High)
+            </button>
+        </section>
+
+        <section>
+            <h2>Travel Destinations</h2>
+            <div id="destinationList" class="destination-list"></div>
+            <p id="noResults" hidden>No destinations match your search.</p>
+        </section>
+
+        <section class="total-section">
+            <h2>Total Estimated Cost</h2>
+            <p id="totalCost">$0</p>
+        </section>
+    </main>
+</body>
+</html>
